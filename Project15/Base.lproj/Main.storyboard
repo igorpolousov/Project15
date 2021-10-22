@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7W-Mq-csR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7W-Mq-csR">
                                 <rect key="frame" x="193" y="819" width="32" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Tap"/>
@@ -24,12 +24,22 @@
                                     <action selector="tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06l-xe-GE4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taS-d5-qAa">
+                                <rect key="frame" x="178" y="754" width="58" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Spring"/>
+                                <connections>
+                                    <action selector="springed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vPH-9B-0aA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="W7W-Mq-csR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Hrd-ML-Chm"/>
+                            <constraint firstItem="W7W-Mq-csR" firstAttribute="top" secondItem="taS-d5-qAa" secondAttribute="bottom" constant="29" id="9eO-Zr-lYs"/>
+                            <constraint firstItem="W7W-Mq-csR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="2" id="Hrd-ML-Chm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W7W-Mq-csR" secondAttribute="bottom" constant="7" id="ZqA-Sn-4xi"/>
+                            <constraint firstItem="taS-d5-qAa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xda-Pj-MkP"/>
                         </constraints>
                     </view>
                 </viewController>
